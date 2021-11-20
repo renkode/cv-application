@@ -36,13 +36,25 @@ class App extends Component {
 				}
 			]
 		}
+		this.setPersonalInfo = this.setPersonalInfo.bind(this);
 
 		this.addWorkForm = this.addWorkForm.bind(this);
 		this.deleteWorkForm = this.deleteWorkForm.bind(this);
 		this.setWorkDate = this.setWorkDate.bind(this);
+		this.setWorkInfo = this.setWorkInfo.bind(this);
+
 		this.addEducationForm = this.addEducationForm.bind(this);
 		this.deleteEducationForm = this.deleteEducationForm.bind(this);
 		this.setEducationDate = this.setEducationDate.bind(this);
+		this.setEducationInfo = this.setEducationInfo.bind(this);
+	}
+
+	setPersonalInfo = (type) => (e) => {
+		const info = this.state.personalInfo;
+		info[type] = e.target.value;
+		this.setState({
+			personalInfo: info
+		});
 	}
 
 	addWorkForm() {
@@ -50,8 +62,8 @@ class App extends Component {
 			id: uniqid(),
 			position: '',
 			company: '',
-			from: '',
-			to: '',
+			from: new Date(),
+			to: new Date(),
 			description: '',
 		};
 		const forms = [...this.state.workForms, newForm];
@@ -63,7 +75,7 @@ class App extends Component {
 	deleteWorkForm = (formId) => (event) => {
 		// need event paramater to work lol idk why
 		const forms = [...this.state.workForms];
-		const index = forms.map(form => form.id).indexOf(formId)
+		const index = forms.map(form => form.id).indexOf(formId);
 		forms.splice(index, 1);
 		this.setState({
 			workForms: forms,
@@ -86,13 +98,22 @@ class App extends Component {
 		});
 	}
 
+	setWorkInfo = (formId, type) => (e) => {
+		const forms = [...this.state.workForms];
+		const index = forms.map(form => form.id).indexOf(formId);
+		forms[index][type] = e.target.value;
+		this.setState({
+			workForms: forms,
+		});
+	}
+
 	addEducationForm() {
 		const newForm = {
 			id: uniqid(),
 			title: '',
 			organization: '',
-			from: '',
-			to: ''
+			from: new Date(),
+			to: new Date()
 		};
 		const forms = [...this.state.eduForms, newForm];
 		this.setState({
@@ -126,18 +147,33 @@ class App extends Component {
 		});
 	}
 
+	setEducationInfo = (formId, type) => (e) => {
+		const forms = [...this.state.eduForms];
+		const index = forms.map(form => form.id).indexOf(formId);
+		forms[index][type] = e.target.value;
+		this.setState({
+			eduForms: forms,
+		});
+	}
+
 	render() {
 		const { personalInfo, workForms, eduForms } = this.state;
 
 		return (
 			<div className="app">
 				<CVForms 
+					setPersonalInfo={this.setPersonalInfo}
+
 					addWorkForm={this.addWorkForm} 
 					deleteWorkForm={this.deleteWorkForm} 
-					setWorkDate={this.setWorkDate} 
+					setWorkDate={this.setWorkDate}
+					setWorkInfo={this.setWorkInfo}
+
 					addEducationForm={this.addEducationForm}
 					deleteEducationForm={this.deleteEducationForm}
 					setEducationDate={this.setEducationDate} 
+					setEducationInfo={this.setEducationInfo}
+
 					personalInfo={personalInfo} 
 					workForms={workForms} 
 					eduForms={eduForms}/>

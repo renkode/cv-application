@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './components/App';
 
+// moral of the story:
+// lifting state up will suck without PureComponents
+// creating subcomponents helps so that they only render into pieces!!!
+
 ReactDOM.render(
   <React.StrictMode>
     <App />

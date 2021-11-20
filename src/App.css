@@ -1,5 +1,6 @@
 .app{
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
 }
@@ -15,6 +16,7 @@ h2 {
   padding-top: 0%;
   width: 50%;
   max-width: 700px;
+  margin-left: auto;
 }
 
 .personal-info-form, .work-form-wrapper, .edu-form-wrapper, .work-form, .education-form {
@@ -30,13 +32,27 @@ h2 {
   width: 100%;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   margin-top: 8px;
 }
 
 .date-picker {
-  width: 50%;
+  width: 45%;
+  flex: 1;
 }
 
 .delete-btn {
   width: 50%;
+}
+
+/*============================================================*/
+
+.preview {
+  position: sticky;
+  top: 0;
+  border: 1px solid red;
+  width: 50%;
+  max-width: 700px;
+  margin-right: auto;
+  height: 100vh;
 }
