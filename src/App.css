@@ -1,38 +1,42 @@
-.App {
-  text-align: center;
+.app{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  margin-bottom: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-wrapper {
+  border: 1px solid black;
+  box-sizing: border-box;
+  padding: 5%;
+  padding-top: 0%;
+  width: 50%;
+  max-width: 700px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.personal-info-form, .work-form-wrapper, .edu-form-wrapper, .work-form, .education-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.work-form, .education-form {
+  margin-bottom: 5%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.date-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 8px;
+}
+
+.date-picker {
+  width: 50%;
+}
+
+.delete-btn {
+  width: 50%;
 }
