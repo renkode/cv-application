@@ -6,7 +6,7 @@ class EducationPV extends PureComponent {
   render() {
     const forms = this.props.eduForms.map(form => (
       <div key={form.id} className="pv-edu-form">
-        <div className="date-column">{getYear(form.from)}—{getYear(form.to)}</div>
+        <div className="date-column">{getYear(form.from)}—<br />{getYear(form.to)}</div>
         <div className="edu-info-column">
           <div className="title-wrapper">
             <span className="title">{form.title}</span>

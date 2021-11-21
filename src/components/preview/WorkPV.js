@@ -6,7 +6,7 @@ class WorkPV extends PureComponent {
   render() {
     const forms = this.props.workForms.map(form => (
       <div key={form.id} className="pv-work-form">
-        <div className="date-column">{getYear(form.from)}—{getYear(form.to)}</div>
+        <div className="date-column">{getYear(form.from)}—<br />{getYear(form.to)}</div>
         <div className="work-info-column">
           <div className="title-wrapper">
             <span className="title">{form.position}</span>

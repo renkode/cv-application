@@ -2,7 +2,7 @@
   "name": "cv-application",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/zaraku/cv-application",
+  "homepage": "https://zaraku.github.io/cv-application/",
   "dependencies": {
     "@emotion/react": "^11.6.0",
     "@emotion/styled": "^11.6.0",

@@ -154,11 +154,8 @@ h3 {
 
 .date-column {
   font-size: 1rem;
-  width: 50px;
-}
-
-.work-info-column, .edu-info-column {
-  margin-left: 1.5rem;
+  width: 60px;
+  margin-right: 1.5rem;
 }
 
 .title-wrapper {
