@@ -7,14 +7,11 @@ import AdapterDateFns from '@mui/lab/AdapterDateFns';
 import LocalizationProvider from '@mui/lab/LocalizationProvider';
 
 class CVForms extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div className="form-wrapper">
         <PersonalForm
+          personalInfo={this.props.personalInfo}
           setPersonalInfo={this.props.setPersonalInfo}
         />
         <LocalizationProvider dateAdapter={AdapterDateFns}>
@@ -28,7 +25,7 @@ class CVForms extends Component {
             eduForms={this.props.eduForms}
             addEducationForm={this.props.addEducationForm}
             deleteEducationForm={this.props.deleteEducationForm}
-            setEducationDate={this.props.setEducationDate} 
+            setEducationDate={this.props.setEducationDate}
             setEducationInfo={this.props.setEducationInfo} />
         </LocalizationProvider>
       </div>

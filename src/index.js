@@ -5,7 +5,7 @@ import App from './components/App';
 
 // moral of the story:
 // lifting state up will suck without PureComponents
-// creating subcomponents helps so that they only render into pieces!!!
+// creating subcomponents helps so that they only re-render into pieces!!!
 
 ReactDOM.render(
   <React.StrictMode>

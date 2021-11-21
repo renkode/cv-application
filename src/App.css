@@ -50,9 +50,16 @@ h2 {
 .preview {
   position: sticky;
   top: 0;
-  border: 1px solid red;
+  border: 1px solid black;
   width: 50%;
   max-width: 700px;
   margin-right: auto;
   height: 100vh;
+  padding: 2.5rem;
+  box-sizing: border-box;
+}
+
+.pv-personal, .pv-work-form, .pv-edu-form {
+  border: 1px solid red;
+  margin-bottom: 2%;
 }
