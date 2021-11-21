@@ -1,6 +1,6 @@
 import React, { PureComponent } from "react";
 import EduFormUnit from "./EduFormUnit";
-import '../App.css';
+import '../../App.css';
 import { Button } from '@mui/material';
 
 class EducationForms extends PureComponent {

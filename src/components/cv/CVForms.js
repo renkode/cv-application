@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PersonalForm from "./PersonalForm";
 import WorkForms from "./WorkForms";
 import EducationForms from "./EducationForms";
-import '../App.css';
+import '../../App.css';
 import AdapterDateFns from '@mui/lab/AdapterDateFns';
 import LocalizationProvider from '@mui/lab/LocalizationProvider';
 

@@ -1,5 +1,5 @@
 import React, { PureComponent } from "react";
-import '../App.css';
+import '../../App.css';
 import { Button, TextField } from '@mui/material';
 import { DatePicker } from '@mui/lab';
 
@@ -30,7 +30,7 @@ class EduFormUnit extends PureComponent {
             renderInput={(params) => <TextField {...params} />}
           />
         </div>
-
+        <TextField defaultValue={form.description} onChange={this.props.setEducationInfo(form.id, "description")} label="Description" variant="outlined" margin="dense" size="small" multiline minRows="2" maxRows="2" />
         <Button className="delete-btn" onClick={this.props.deleteEducationForm(form.id)} variant="outlined" color="error">Delete</Button>
       </div>
     )

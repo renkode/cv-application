@@ -6,15 +6,17 @@
 }
 
 h2 {
+  color: rgb(62, 66, 73);
   margin-bottom: 0;
 }
 
 .form-wrapper {
   border: 1px solid black;
   box-sizing: border-box;
-  padding: 5%;
+  padding: 3%;
   padding-top: 0%;
-  width: 50%;
+  min-width: 300px;
+  width: 40%;
   max-width: 700px;
   margin-left: auto;
 }
@@ -48,18 +50,92 @@ h2 {
 /*============================================================*/
 
 .preview {
+  font-size: 0.8rem;
   position: sticky;
   top: 0;
   border: 1px solid black;
-  width: 50%;
-  max-width: 700px;
+  min-width: 700px;
+  width: 700px;
   margin-right: auto;
   height: 100vh;
-  padding: 2.5rem;
   box-sizing: border-box;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  background-color: rgb(239, 242, 243);
 }
 
 .pv-personal, .pv-work-form, .pv-edu-form {
-  border: 1px solid red;
-  margin-bottom: 2%;
+  padding: 1rem 0rem;
+}
+
+.pv-personal {
+  background-color: rgb(63, 64, 65);
+  color: rgb(239, 242, 243);
+  padding: 1rem;
+}
+
+.intro-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.personal-name {
+  font-size: 3rem;
+}
+
+.personal-title {
+  font-weight: bold;
+  color:rgb(106, 186, 199)
+}
+
+.personal-desc {
+  color: rgb(185, 189, 190)
+}
+
+.contact {
+  line-height: 1.7rem;
+}
+
+.pv-work-wrapper, .pv-edu-wrapper {
+  padding: 1rem;
+}
+
+.pv-work-form, .pv-edu-form {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0rem;
+}
+
+.label {
+  border-bottom: 1px solid rgb(175, 180, 180);
+}
+
+.label h3 {
+  margin-top: 8px;
+  margin-bottom: 3px;
+  color:rgb(66, 81, 92);
+}
+
+.date-column {
+  font-size: 1rem;
+  width: 50px;
+}
+
+.work-info-column, .edu-info-column {
+  margin-left: 1rem;
+}
+
+.title-wrapper {
+  font-size: 1rem;
+  color: gray;
+  margin-bottom: 4px;
+}
+
+.title {
+  color: rgb(44, 44, 44);
+}
+
+.organization {
+  font-style: italic;
 }

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import CVForms from "./CVForms";
-import Preview from "./Preview";
+import CVForms from "./cv/CVForms";
+import Preview from "./preview/Preview";
 import '../App.css';
 import uniqid from "uniqid";
 
@@ -14,6 +14,7 @@ class App extends Component {
         email: 'johnsmith123@hotmail.com',
         phone: '123-4567-8910',
         location: 'United States',
+        website: 'github.com/johnsmith',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       },
       workForms: [
@@ -33,6 +34,7 @@ class App extends Component {
           organization: 'University of Hoshua',
           from: new Date(),
           to: new Date(),
+          description:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
         }
       ]
     }
