@@ -15,13 +15,13 @@ class App extends Component {
         phone: '123-4567-8910',
         location: 'United States',
         website: 'github.com/johnsmith',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       },
       workForms: [
         {
           id: uniqid(),
           position: 'Social Media Manager',
-          company: 'Tw*tter',
+          company: 'Twitter',
           from: new Date(),
           to: new Date(),
           description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -30,8 +30,8 @@ class App extends Component {
       eduForms: [
         {
           id: uniqid(),
-          title: 'Bachelor of Science',
-          organization: 'University of Hoshua',
+          title: 'Bachelor of Computer Science',
+          organization: 'University of Coolville',
           from: new Date(),
           to: new Date(),
           description:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
